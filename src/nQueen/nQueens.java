@@ -9,15 +9,16 @@ public class nQueens {
     }
 
     private void initialise(int n) {
+        // setup board and fill with zero
         int[][] board = new int[n][n];
-
         for (int[] row : board)
             Arrays.fill(row, 0);
 
-        if (!findSol(board, 0)) {
-            System.out.println("No Solution Exists");
-        } else {
+        // if solution found, print it
+        if (findSol(board, 0)) {
             printSol(board);
+        } else {
+            System.out.println("No Solution Exists");
         }
     }
 
@@ -38,6 +39,7 @@ public class nQueens {
         return false;
     }
 
+    // check for queens in
     private boolean placeQueenOrNot(int[][] board, int row, int col) {
         // same col
         for (int i = 0; i < col; i++) {
@@ -45,13 +47,13 @@ public class nQueens {
                 return false;
             }
         }
-        // top left diagonal
+        // top left diag
         for (int i = row, j = col; i > 0 && j >= 0; i--, j--) {
             if (board[i][j] == 1) {
                 return false;
             }
         }
-        // bottom left diagonal
+        // bottom left diag
         for (int i = row, j = col; j > 0 && i < board.length; i++, j--) {
             if (board[i][j] == 1) {
                 return false;
@@ -60,6 +62,7 @@ public class nQueens {
         return true;
     }
 
+    // print board
     private void printSol(int[][] board) {
         for (int[] row : board) {
             for (int col : row) {
