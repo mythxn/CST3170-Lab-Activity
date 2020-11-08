@@ -6,7 +6,7 @@ public class States {
     static private int counter = 0;
 
     // state information
-    public int identifier;
+    public final int identifier;
     public int parentIdentifier;
     public int missionariesLeft;
     public int cannibalsLeft;

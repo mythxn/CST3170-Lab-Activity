@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class missionariesAndCannibals {
 
-    static ArrayList<States> stack = new ArrayList<>();
+    static final ArrayList<States> stack = new ArrayList<>();
 
     public static void main(String[] args) {
 

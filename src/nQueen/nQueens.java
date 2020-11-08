@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class nQueens {
     public static void main(String[] args) {
         nQueens nq = new nQueens();
-        nq.initialise(4);
+        nq.initialise();
     }
 
-    private void initialise(int n) {
+    private void initialise() {
         // setup board and fill with zero
-        int[][] board = new int[n][n];
+        int[][] board = new int[4][4];
         for (int[] row : board)
             Arrays.fill(row, 0);
 
