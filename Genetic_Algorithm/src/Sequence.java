@@ -1,5 +1,3 @@
-package geneticAlgorithm;
-
 import java.util.Random;
 
 public class Sequence {

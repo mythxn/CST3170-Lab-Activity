@@ -1,5 +1,3 @@
-package missionariesAndCannibals;
-
 public class States {
 
     // auto incrementing identifier
@@ -74,5 +72,4 @@ public class States {
         }
     }
 }
-
 

@@ -1,5 +1,3 @@
-package neuronWeightAdjuster;
-
 import java.util.Arrays;
 
 public class singleNeuron {

@@ -1,11 +1,9 @@
-package neuralNetwork;
-
 import java.io.IOException;
 import java.text.DecimalFormat;
 
 public class mainMethod {
-    static String trainSet = "src/neuralNetwork/datasets/trainingSet.csv";
-    static String testSet = "src/neuralNetwork/datasets/testSet.csv";
+    static String trainSet = "Neural_Network/src/datasets/trainingSet.csv";
+    static String testSet = "Neural_Network/src/datasets/testSet.csv";
 
     public static void main(String[] args) throws IOException {
         Dataset trainingSet = Dataset.createDataSet(trainSet);

@@ -1,5 +1,3 @@
-package nQueen;
-
 import java.util.Arrays;
 
 public class nQueens {

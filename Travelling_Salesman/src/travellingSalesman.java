@@ -1,4 +1,3 @@
-package travellingSalesman;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import static java.util.Comparator.comparingDouble;
 // this class holds the core tsp logic
 public class travellingSalesman {
     // initialize core variables
-    final static String filePath = "src/travellingSalesman/testData/test4-20.txt";
+    final static String filePath = "Travelling_Salesman/src/testData/test4-20.txt";
     static final ArrayList<Integer> path = new ArrayList<>();
     static ArrayList<Results> results = new ArrayList<>();
     static double totDist = 0.0;
